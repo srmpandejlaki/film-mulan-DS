@@ -12,7 +12,7 @@ body {
 
 .container {
     width: 100%;
-    height: 600px;
+    height: 100vh;
     /* border: black solid; */
 }
 
@@ -34,20 +34,24 @@ body {
 
 /* header */
 header {
-    /* border: black solid; */
     width: 100%;
-    height: 90px;
+    position: fixed;
+    z-index: 100;
+}
+
+.navigation {
+    height: 15vh;
+    max-width: 1440px;
+    background-color: #3b0206;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
 }
 
 nav ul {
     display: flex;
-    gap: 2rem;
+    row-gap: 2.5rem;
     list-style-type: none;
-    margin-right: 10px;
 }
 
 nav li a {
@@ -59,22 +63,18 @@ nav li a {
 nav li a:hover {
     font-weight: 700;
 }
+/* header & nav */
 
 /* main */
-.content {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
 .logo-naga {
     position: absolute;
     object-fit: cover;
     z-index: -1;
-    margin: 400px;
-    top: 10%;
+    margin: 70vh 10vh; 
+    /* top: 10%; */
     filter: blur(3px);
     transform: translateZ(-1px)scale(1.5);
+    width: 50%;
 }
 
 .home {
@@ -84,14 +84,14 @@ nav li a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    row-gap: 5px;
     
 }
 
 .desc {
-    width: 600px;
+    width: 400px;
     color: white;
     font-weight: 400;
-    padding: 10px;
 }
 
 .scroll {
@@ -106,7 +106,7 @@ nav li a:hover {
   }
 
 .review, img {
-    width: 600px;
+    width: 400px;
     gap: 1rem;
     scroll-snap-align: center;
 }
@@ -140,9 +140,7 @@ nav li a:hover {
     width: 100vh;
     height: 490px;
     scroll-snap-align: start;
-    /* display: flex; */
     align-items: center;
-    /* flex-basis: 20px; */
     padding: 5px;
     
 }
@@ -154,4 +152,36 @@ nav li a:hover {
     border: 1px solid rgba(255, 255, 255, 0.18);
     /* box-shadow: 0 8px 20px 0 rgba(255, 255, 255, 0.37); */
     border-radius: 10px;
+}
+
+/* responsif */
+@media screen and (min-width: 1241px) and (max-width: 1440px) {
+    .review, img {
+        width: 600px;
+    }
+    .desc {
+        width: 700px;
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .review, img {
+        width: 400px;
+    }
+    .desc {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 100px;
+    }
+    .review, img {
+        width: 400px;
+    }
+    .desc {
+        width: 200px;
+    }
 }
