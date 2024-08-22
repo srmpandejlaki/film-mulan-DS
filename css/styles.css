@@ -251,6 +251,12 @@ img {
   .home .desc {
     font-size: small;
   }
+  .font {
+    font-size: larger;
+  }
+  .film {
+    margin-top: -10px;
+  }
   .film,
   .container {
     height: 100vh;
@@ -261,10 +267,14 @@ img {
     width: 100%;
   }
   .listFilm {
-    margin-top: -20px;
+    margin: -30px 5px 0;
+    height: 600px;
+    width: 95vh;
   }
   .box {
+    margin: 10px;
     height: 500px;
+    width: 90vh;
   }
   .desc {
     margin-top: 1rem;
@@ -272,8 +282,8 @@ img {
   }
   .desc-box {
     flex-direction: column;
-    font-size: medium;
-    margin: -15px 20px 5px 0;
-    padding-left: 5px;
+    font-size: small;
+    width: 55vh;
+    margin: -20px 10px 0 10px;
   }
 }
