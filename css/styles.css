@@ -105,7 +105,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 85px;
 }
 
 .listFilm {
@@ -170,6 +169,10 @@ img {
   margin-top: 3rem;
   gap: 1rem;
 }
+
+.character {
+  margin-bottom: 3rem;
+}
 .character h1 {
   text-align: center;
   padding-top: 100px;
@@ -203,6 +206,7 @@ footer {
   height: 10vh;
   background-color: #3b0206;
   display: flex;
+  align-items: center;
   justify-content: center;
 
   top: 0;
@@ -294,22 +298,15 @@ footer {
     margin-top: -5px;
   }
   .film {
-    margin-top: 70px;
-    padding-top: 15px;
     row-gap: 3rem;
-  }
-  .film h1 {
-    margin-top: 80px;
   }
 
   /* character */
   .character h1 {
-    margin-top: 100px;
     font-size: larger;
   }
   .character h2 {
     font-size: large;
-    margin-top: 20px;
   }
   .character p {
     font-size: medium;
@@ -323,18 +320,15 @@ footer {
     width: 100%;
   }
   .cast {
-    height: 260px;
+    height: 280px;
   }
   .box2 {
-    width: 100vh;
+    width: 200px;
     height: 250px;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .container {
-    height: auto;
-  }
   .navigation {
     height: 10vh;
     width: 100%;
@@ -356,13 +350,8 @@ footer {
   .font {
     font-size: larger;
   }
-  .film {
-    margin-top: -10px;
-  }
-  .film,
-  .container {
-    height: 100vh;
-  }
+
+  /* film */
   .review,
   img {
     margin: 2rem 1rem 1rem;
@@ -370,7 +359,7 @@ footer {
   }
   .listFilm {
     margin: -30px 5px 0;
-    height: 600px;
+    height: 510px;
     width: 95vh;
   }
   .box {
@@ -390,9 +379,6 @@ footer {
   }
 
   /* character */
-  .character {
-    margin-top: 250px;
-  }
   .character h1 {
     margin-top: 100px;
     font-size: medium;
@@ -416,7 +402,15 @@ footer {
     height: 230px;
   }
   .box2 {
-    width: 100vh;
+    width: 25vh;
     height: 200px;
+  }
+
+  /* footer */
+  footer {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
