@@ -12,7 +12,7 @@ body {
 
 .container {
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 .font {
@@ -35,13 +35,12 @@ body {
 /* header */
 header {
   width: 100%;
+  height: 20vh;
   position: fixed;
   z-index: 100;
 }
 
 .navigation {
-  height: 15vh;
-  max-width: 1440px;
   background-color: #3b0206;
   display: flex;
   justify-content: space-between;
@@ -80,12 +79,12 @@ nav li a:hover {
 }
 
 .home {
+  min-height: 100vh;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  padding: 5px;
 }
 
 .desc {
@@ -93,17 +92,6 @@ nav li a:hover {
   color: white;
   font-weight: 500;
   text-align: justify;
-}
-
-.scroll {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-
-/* hide the scrollbar */
-.scroll::-webkit-scrollbar {
-  display: none;
 }
 
 .review,
@@ -164,10 +152,21 @@ img {
 }
 
 /* character */
+.infinite-scroll {
+  overflow: hidden;
+}
+
 .cast {
   display: flex;
   gap: 2rem;
-  margin: 15px;
+  padding: 1rem;
+  animation: infinite-scroll 15s linear infinite;
+}
+
+.animasi-cast,
+.live-action-cast {
+  margin-top: 3rem;
+  gap: 1rem;
 }
 .character h1 {
   text-align: center;
@@ -195,6 +194,43 @@ p {
 .box2 p {
   text-align: center;
 }
+
+/* footer */
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #3b0206;
+  display: flex;
+  justify-content: center;
+
+  top: 0;
+}
+
+/* scroll area */
+
+/* scroll manual */
+.scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+/* hide the scrollbar */
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* infinite scroll */
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* scroll area */
 
 /* responsif */
 @media screen and (min-width: 1260px) and (max-width: 1440px) {
@@ -240,6 +276,8 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .home {
+  }
   .review,
   img {
     width: 400px;
