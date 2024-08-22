@@ -174,6 +174,7 @@ img {
   margin-bottom: 3rem;
 }
 .character h1 {
+  font-size: xx-large;
   text-align: center;
   padding-top: 100px;
 }
@@ -198,6 +199,66 @@ p {
 }
 .box2 p {
   text-align: center;
+}
+
+/* profil */
+aside {
+  width: 100%;
+}
+
+.boxx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.profil {
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.profil img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.shortDesc {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shortDesc p {
+  text-align: center;
+  color: white;
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+.link {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.link i {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 5px;
+}
+
+.link .email {
+  font-size: large;
 }
 
 /* footer */
