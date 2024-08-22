@@ -334,15 +334,34 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
+  .logo {
+    margin: 5px;
+  }
   .film {
     row-gap: 1rem;
   }
   .film h1 {
     margin-top: 10px;
   }
+
+  /* profil */
+  .shortDesc {
+    width: 60%;
+  }
+
+  .profil {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    height: 15vh;
+  }
+  .logo {
+    width: 120px;
+    margin: 5px;
+  }
   .review,
   img {
     width: 400px;
@@ -386,6 +405,28 @@ footer {
   .box2 {
     width: 200px;
     height: 250px;
+  }
+
+  /* profil */
+  .shortDesc {
+    width: 70%;
+    font-size: small;
+  }
+
+  .profil {
+    width: 70%;
+  }
+  .fotoProfil {
+    width: 150px;
+    height: 150px;
+  }
+  .profil img {
+    width: 150px;
+    margin: -10px 20px;
+  }
+  .link i {
+    font-size: large;
+    margin: 5px;
   }
 }
 
@@ -465,6 +506,35 @@ footer {
   .box2 {
     width: 25vh;
     height: 200px;
+  }
+
+  /* profil */
+  .shortDesc {
+    width: 90%;
+    font-size: 13px;
+  }
+  .shortDesc p {
+    font-size: 13px;
+  }
+  .profil {
+    width: 80%;
+    height: 300px;
+    flex-direction: column;
+  }
+  .fotoProfil {
+    width: 100px;
+    height: 100px;
+    margin-left: -20px;
+  }
+  .profil img {
+    width: 90px;
+  }
+  .link {
+    width: 100%;
+  }
+  .link i {
+    font-size: 20px;
+    margin: 5px;
   }
 
   /* footer */
