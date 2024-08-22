@@ -163,6 +163,32 @@ img {
   border-radius: 10px;
 }
 
+/* character */
+.animasi {
+  display: flex;
+  gap: 2rem;
+  margin: 15px;
+}
+.character img {
+  width: 150px;
+  margin: 2rem;
+}
+.character h2,
+p {
+  color: white;
+}
+.box2 {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.box2 p {
+  text-align: center;
+}
+
 /* responsif */
 @media screen and (min-width: 1260px) and (max-width: 1440px) {
   .desc {
@@ -233,6 +259,9 @@ img {
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    height: auto;
+  }
   .navigation {
     height: 10vh;
     width: 100%;
