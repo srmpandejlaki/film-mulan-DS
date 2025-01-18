@@ -1,8 +1,7 @@
-## Course Belajar Dasar Pemrograman Web - Dicoding Indonesia
-#### Submission: Tugas Akhir Membuat Website 
+## Course Belajar Dasar Pemrograman Web - Dicoding Indonesia <br><br>Submission: Tugas Akhir Membuat Website 
 <br>
 
-## Berikut kriteria-kriteria wajib submission yang harus Anda penuhi.
+### Berikut kriteria-kriteria wajib submission yang harus Anda penuhi.
 
 <ul>
   <li>Terdapat elemen header, footer, main, article, dan aside di berkas HTML.</li>
@@ -19,7 +18,7 @@
   <li>Semakin detail dan lengkap website Anda maka nilai submission akan makin tinggi.</li>
 </ul>
 
-## Submission Anda akan dinilai oleh reviewer dengan skala 1-5 berdasarkan dari parameter yang ada. Anda dapat menerapkan beberapa saran untuk mendapatkan nilai tinggi. Berikut sarannya.
+### Submission Anda akan dinilai oleh reviewer dengan skala 1-5 berdasarkan dari parameter yang ada. Anda dapat menerapkan beberapa saran untuk mendapatkan nilai tinggi. Berikut sarannya.
 
 <ul>
   <li>Menerapkan tampilan aplikasi yang menarik.</li>
